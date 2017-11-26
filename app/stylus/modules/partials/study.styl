@@ -1,0 +1,22 @@
+.study-container
+  height 246px
+  position relative
+  overflow hidden
+  display block
+  &--heading
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background rgba(251,174,23,.7)
+    transitions()
+    transform translateY(-100%)
+    padding 20px 15px
+  &--back
+    display flex
+    align-items center
+    justify-content center
+  &:hover
+    .study-container--heading
+      transform none

@@ -1,0 +1,20 @@
+include ../utilities/_mixins.pug
+
+doctype html
+
+html
+
+    include ../partials/_head.pug
+
+    body#index
+        include ../partials/_navigation.pug
+
+        main
+            .container
+                .row
+                    .col-12
+                        img(src='img/illus/birds.png').birds
+
+            block content
+
+            include ../partials/_footer.pug
