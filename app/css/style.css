@@ -766,7 +766,7 @@ video {
 	height: 450px;
 }
 section {
-	margin-bottom: 4rem;
+	margin-bottom: 6.9rem;
 }
 main {
 	background: #fff;
@@ -1301,7 +1301,7 @@ header {
 	-webkit-transform: translateY(-100%);
 	    -ms-transform: translateY(-100%);
 	        transform: translateY(-100%);
-	padding: 20px 15px;
+	padding: 18px 15px;
 }
 .study-container--back {
 	display: -webkit-box;
