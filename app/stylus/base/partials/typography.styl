@@ -4,19 +4,26 @@
 h1
   font(3.375rem, $black, 700, normal)
   margin-bottom 2.5rem
-
+  +mobile()
+    font-size $s32
 
 h2
   font(3.375rem, $black, 700, normal)
   margin-bottom 2.75rem
+  +mobile()
+    font-size $s32
+    margin-bottom 1rem
 
 h3
   font(2.250rem, $black, 700, normal)
   margin-bottom 1.875rem
 
 h4
-  font(1.5rem, $black, 600, normal)
-  margin-bottom 1.75rem
+  font(1.125rem, $black, 700, normal)
+  margin-bottom 0
+  margin-top .75rem
+  letter-spacing: 2px;
+  text-transform uppercase
 
 h5
   font(1.25rem, $black, 500, normal)

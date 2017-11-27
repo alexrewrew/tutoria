@@ -1,66 +1,22 @@
 $(document).ready(function () {
     "use strict";
 
-    //  ----- SLIDER -----
+    // var controller = new ScrollMagic.Controller();
+    //
+    // new ScrollMagic.Scene({triggerElement: ".section-valued", duration: 300, top: -200})
+    //     .setPin(".birds-back")
+    //     .addTo(controller);
+    var s = skrollr.init();
 
-    // SLICK SLIDER COUNTER
-    $('#link3 .slider').on('init reInit afterChange', function (event, slick, currentSlide) {
-        var i = (currentSlide ? currentSlide : 0) + 1;
-        $('.slider-counter').text(i + '/' + slick.slideCount);
-    });
+
+    //  ----- SLIDER -----
 
     // SLICK SLIDER
     $(".slider-full").slick({
         // slide: ".slide",
-        prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
-        nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
-        dots: true
-
-    });
-
-    $(".slider-two").slick({
-        // slide: ".slide",
-        dots: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
-        nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-
-
-    $(".slider-three").slick({
-        // slide: ".slide",
-        dots: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
-        nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ],
-
+        prevArrow: "<div class='arrow left'><img src='img/illus/icons/arrow-left.svg'></div>",
+        nextArrow: "<div class='arrow right'><img src='img/illus/icons/arrow-right.svg'></div>",
+        dots: false
 
     });
 

@@ -2,3 +2,17 @@
 @import "../../utilities/mixins"
 
 footer {}
+
+.footer-social
+  list-flex(row)
+  align-items center
+  height 100%
+  justify-content flex-end
+  font-size 1.125em
+  li
+    margin-left 3rem
+    a
+      display block
+      color $black
+      &:hover
+        color $yellow

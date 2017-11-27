@@ -17,59 +17,37 @@
 .slider
   position relative
   overflow hidden
-  margin-bottom 1rem
   .arrow
     position absolute
     text-align center
     z-index 100
-    top 41%
+    top 5%
     cursor pointer
     .fa
-      font-size 2rem
+      font-size 6.5rem
+      color $yellow
+
 
   .arrow.left
     left 0
   .arrow.right
     right 0
 
-  .slide
-    display flex
-    justify-content center
-    align-items center
-    height 100%
-    overflow hidden
-    margin 0 15px
-    &:focus
-      outline none
+  .slider-item
+    padding 0 6rem
+    p
+      font-size 1.125em
 
-  .slider-counter
-    position absolute
-    z-index 100
-    right 0
-    bottom 0
-    font-size 3em
-
-
-  .slick-dots
-    bottom 0
-    left 0
-    right 0
-    position absolute
-    display flex
-    flex-direction row
-    justify-content center
-    li
-      margin 5px
-      button
-        padding 0
-        width 15px
-        height 15px
+    &--comment
+      margin-bottom 1.25rem
+    &--author
+      display flex
+      &-photo
+        margin-right 2rem
+        height 64px
+        width 64px
         border-radius 50%
-        background $gray
-        color $trans
-        &:hover
-          background $black
-          opacity .6
-    .slick-active
-      button
-        background $black
+        overflow hidden
+        border: solid 1px #979797;
+        img
+          width 100%

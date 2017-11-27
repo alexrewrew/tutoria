@@ -4,15 +4,21 @@
 input
   -webkit-appearance none
   width 100%
-  margin-bottom 1rem
-  border 1px solid $black
-  padding 11px 15px 12px
+  margin-bottom 1.75rem
+  margin-top .875rem
+  border none
+  border-bottom 2px dotted $white
+  padding 10px 0 10px
+  background $trans
   transitions()
+  font-size 1.125rem
+  color $white
   &:focus
     outline none
-    border-color green
   +placeholder()
-    color $gray
+    color $white
+    opacity .5
+
 
 textarea
   -webkit-appearance none

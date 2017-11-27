@@ -3,9 +3,13 @@
 
 header
   margin-bottom 4rem
+  +mobile()
+    margin-bottom 3rem
 
 .jumbotron
   padding: 5rem 0;
+  +mobile()
+    padding 3rem 0
   h1, h2
     display inline
     color $white
@@ -15,3 +19,6 @@ header
   background-size cover
   height 920px
   padding 5.313rem 0
+  +mobile()
+    padding-top 0
+    height 520px

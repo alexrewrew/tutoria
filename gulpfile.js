@@ -81,6 +81,9 @@ gulp.task("scripts2", function () {
         // 'app/libs/fullpage.js/vendors/jquery.easings.min.js',
         // 'app/libs/fullpage.js/vendors/scrolloverflow.js',
         // 'app/libs/fullpage.js/dist/jquery.fullpage.js'
+        // 'app/libs/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
+        // 'app/libs/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
+        'app/libs/skrollr/src/skrollr.js'
     ])
         .pipe(concat("vendor.js"))
         .pipe(gulp.dest("app/js"));

@@ -1,0 +1,26 @@
+.section-valued
+  position: relative;
+  &--block
+    position relative
+    z-index 2
+    +portrait()
+      margin-bottom 2rem
+    +mobile()
+      margin-bottom 1rem
+    p
+      font-size 1.125em
+      margin-bottom 0
+    ul
+      li
+        font-size 1.125em
+
+  .birds-back
+    position absolute
+    top 0
+    left calc(50% - 790px)
+    z-index 1
+    +tablet()
+      max-width 100%
+      left 0
+    +mobile()
+      left 50%

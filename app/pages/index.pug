@@ -9,107 +9,133 @@ block content
     header.header-index
         .container
             .row.justify-content-center
-                .col-10
+                .col-md-10
                     .jumbotron
                         h1 Tutoria
                         h2  — це маленька й затишна студія навчання та розвитку особистості.
     section
         .container
             .row.justify-content-center
-                .col-10
+                .col-md-10
                     h2 Навчаємо
-                .col-4
+                .col-md-4
                     a(href='' title='' alt='').study-container
-                        .study-container--heading
-                            h3 Школярі
+                        h3 Школярі
                         .study-container--back
                             img(src='img/illus/study/study1.png' title='' alt='')
-                .col-4
+                .col-md-4
                     a(href='' title='' alt='').study-container
-                        .study-container--heading
-                            h3 ЗНО
+                        h3 ЗНО
                         .study-container--back
                             img(src='img/illus/study/study2.png' title='' alt='')
-                .col-4
+                .col-md-4
                     a(href='' title='' alt='').study-container
-                        .study-container--heading
-                            h3 Дорослі
+                        h3 Дорослі
                         .study-container--back
                             img(src='img/illus/study/study3.png' title='' alt='')
-    section
+    section.section-numbers
         .container
             .row.justify-content-center
-                .col-10
+                .col-md-10
                     h2 Tutoria в цифрах
-                .col-3
-                    h2 181
-                    p Середній бал ЗНО учнів
-                .col-3
-                    h2 198
-                    p Середній бал ЗНО вчителів
-                .col-3
-                    h2 400+
-                    p Випускників студії
-                .col-3
-                    h2 7000+
-                    p Занять проведено за різними напрямками
-    section
+                .col-lg-3.col-6
+                    .section-numbers--block
+                        h2 181
+                        p Середній бал ЗНО учнів
+                .col-lg-3.col-6
+                    .section-numbers--block
+                        h2 198
+                        p Середній бал ЗНО вчителів
+                .col-lg-3.col-6
+                    .section-numbers--block
+                        h2 400+
+                        p Випускників студії
+                .col-lg-3.col-6
+                    .section-numbers--block
+                        h2 7000+
+                        p Занять проведено за різними напрямками
+    section.section-valued
         .container
             .row.justify-content-center
-                .col-10
-                    h2 Tutoria в цифрах
-                .col-3
-                    h3 Актуальні знання
-                    p Розробляємо власні підручники й навчальні програми.
-                .col-3
-                    h3 Креативні викладачі
-                    p Уроки в Тьюторії — це не конспекти та лекції, а ретельно продумані інтерактивні презентації, візуальні хрестоматії та навчальні ігри.
-                .col-3
-                    h3 Завжди на зв’язку
-                    p Спілкування необмежує-мо навчальним графіком. Викладачам можна написати в соцмережах — допоможемо запершої нагоди.
-                .col-3
-                    h3 Гнучкий підхід
-                    p Заняття:
-                    ul
-                        li — у студії та скайпом;
-                        li - у групах й індивідуально;
-                        li — у першу та другу зміни.
-    section
-        .container
+                .col-md-10
+                    h2 Чому нас цінують?
+                .col-lg-3.col-md-6
+                    .section-valued--block
+                        p
+                            b Актуальні знання
+                        p Розробляємо власні підручники й навчальні програми.
+                .col-lg-3.col-md-6
+                    .section-valued--block
+                        p
+                            b Креативні викладачі
+                        p Уроки в Тьюторії — це не конспекти та лекції, а ретельно продумані інтерактивні презентації, візуальні хрестоматії та навчальні ігри.
+                .col-lg-3.col-md-6
+                    .section-valued--block
+                        p
+                            b Завжди на зв’язку
+                        p Спілкування необмежуємо навчальним графіком. Викладачам можна написати в соцмережах — допоможемо запершої нагоди.
+                .col-lg-3.col-md-6
+                    .section-valued--block
+                        p
+                            b Гнучкий підхід
+                        p Заняття:
+                        ul
+                            li — у студії та скайпом;
+                            li — у групах й індивідуально;
+                            li — у першу та другу зміни.
+        img(src='img/illus/birds-back.png' data-1000="top:0%;" data-end="top:-100%;").birds-back
+
+    section.section-loved
+        .container-fluid
             .row
                 .col-6
-                .col-6
-                    h2 Чому нас люблять?
-                    ul
-                        li — Можемо пояснити граматику через футбол і шахи;
-                        li — Учень стомився - викладач 3 хвилини помедитує разом з ним;
-                        li — Завжди порадимо, що почитати, переглянути, відвідати;
-                        li — У нас сонячні кімнати та м’які пуфи :)
+                    img(src='img/illus/loved/loved-back.jpg').loved-back
+        .container
+            .row
+                .offset-md-6.col-xl-4.col-lg-5
+                    .section-loved--block
+                        h2 Чому нас люблять?
+                        ul
+                            li — Можемо пояснити граматику через футбол і шахи;
+                            li — Учень стомився - викладач 3 хвилини помедитує разом з ним;
+                            li — Завжди порадимо, що почитати, переглянути, відвідати;
+                            li — У нас сонячні кімнати та м’які пуфи :)
 
     section
         .container
             .row.justify-content-center
                 .col-10
                     h2 Відгуки
-                .col-8
-                    .slider
-                        .slier-item
+                .col-md-10.col-lg-8
+                    .slider.slider-full
+                        .slider-item
                             .slider-item--comment
                                 p "Наш Ілля із захопленням розповідав про все що відбувалося у зимовому таборі. Вдячні за креативний підхід до навчання, творчий політ педколективу, тепло, затишок, турботу і любов до наших дітей!"
                             .slider-item--author
-                                img(src='' title=)
-                                h3 ДОВБУШ РАЇСА
-                                p Тиждень інтенсивів з Української мови
+                                .slider-item--author-photo
+                                    img(src='img/illus/slider/face1.png' title='' alt='')
+                                .slider-item--author-text
+                                    h4 ДОВБУШ РАЇСА
+                                    p Тиждень інтенсивів з Української мови
+                        .slider-item
+                            .slider-item--comment
+                                p "Наш Ілля із захопленням розповідав про все що відбувалося у зимовому таборі. Вдячні за креативний підхід до навчання, творчий політ педколективу, тепло, затишок, турботу і любов до наших дітей!"
+                            .slider-item--author
+                                .slider-item--author-photo
+                                    img(src='' title=)
+                                .slider-item--author-text
+                                    h4 ДОВБУШ РАЇСА
+                                    p Тиждень інтенсивів з Української мови
 
-    section
+    section.section-send
         .container
-            .row
+            .row.justify-content-center
                 .col-10
                     h3 Підпишись на розсилку Tutoria
-                    form
-                        input(type='text' placeholder='Ім’я')
+                    form.form-half-input
+                        input(type='text' placeholder='Ім’я').error
                         input(type='email' placeholder='E-mail')
-                        button.button Надіслати
+                        button.button.button-white Надіслати
 
 
 
