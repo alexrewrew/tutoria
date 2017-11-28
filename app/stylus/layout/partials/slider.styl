@@ -23,9 +23,10 @@
     z-index 100
     top 5%
     cursor pointer
-    .fa
-      font-size 6.5rem
-      color $yellow
+    +mobile()
+      img
+        max-width 30px
+        width 100%
 
 
   .arrow.left
@@ -35,19 +36,30 @@
 
   .slider-item
     padding 0 6rem
+    +mobile()
+      padding 0
+
     p
       font-size 1.125em
-
+      +mobile()
+        font-size .875em
     &--comment
       margin-bottom 1.25rem
+      +mobile()
+        padding 0 3rem
     &--author
       display flex
+
       &-photo
-        margin-right 2rem
         height 64px
         width 64px
         border-radius 50%
         overflow hidden
         border: solid 1px #979797;
+        flex 1 1 64px
+        max-width 64px
         img
           width 100%
+      &-text
+        padding-left 2rem
+        max-width: calc(100% - 64px);

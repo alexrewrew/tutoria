@@ -1,18 +1,29 @@
 @import "../../utilities/vars"
 @import "../../utilities/mixins"
 
-footer {}
+footer
+  .link-logo
+    +mobile()
+      max-width 161px
 
 .footer-social
   list-flex(row)
   align-items center
   height 100%
   justify-content flex-end
-  font-size 1.125em
+  +mobile()
+    justify-content flex-start
+    margin 5px 0 20px
   li
     margin-left 3rem
+    +mobile()
+      margin-left 0
+      margin-right 2rem
     a
       display block
       color $black
+      font-size 1.125em
+      +mobile()
+        font-size .875em
       &:hover
         color $yellow
