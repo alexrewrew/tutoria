@@ -1,0 +1,21 @@
+.team-container
+  display block
+  margin-bottom 4rem
+  &--image
+    width: 255px;
+    height: 255px;
+    border-radius 50%
+    overflow hidden
+    display flex
+    align-items center
+    justify-content center
+    margin-bottom 1rem
+    +mobile()
+      width 209px
+      height 209px
+      .plus
+        width 100%
+  &--description
+    h3
+      font-size $s27
+      margin-bottom 1rem

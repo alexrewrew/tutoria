@@ -71,7 +71,7 @@ gulp.task("scripts2", function () {
         // "app/libs/iCheck/icheck.js",
         "app/libs/slick-carousel/slick/slick.js",
         // "app/libs/remodal/dist/remodal.js",
-        // "app/libs/modaal/dist/js/modaal.js",
+        "app/libs/modaal/dist/js/modaal.js",
         // "app/libs/magnific-popup/dist/jquery.magnific-popup.js",
         "app/libs/fancybox/dist/jquery.fancybox.js",
         // "app/libs/wow/dist/wow.js",

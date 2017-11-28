@@ -1,14 +1,5 @@
 $(document).ready(function () {
     "use strict";
-
-    // var controller = new ScrollMagic.Controller();
-    //
-    // new ScrollMagic.Scene({triggerElement: ".section-valued", duration: 300, top: -200})
-    //     .setPin(".birds-back")
-    //     .addTo(controller);
-    var s = skrollr.init();
-
-
     //  ----- SLIDER -----
 
     // SLICK SLIDER
@@ -70,27 +61,20 @@ $(document).ready(function () {
             $("nav").removeClass("nav-scroll");
         }
     });
-
-    // ANCHOR LINKS SCROLLING
-    $(".smooth").click(function (event) {
-        event.preventDefault();
-        var id = $(this).attr("href"),
-            top = $(id).offset().top - 70;
-        $("body,html").animate({
-            scrollTop: top
-        }, 1500);
-    });
 });
 
 // !!! RESPONSIVE SCRIPTS !!!
 
-// $(window).on('load resize', function() {
-//     'use strict';
-//     if (window.matchMedia("(max-width: 767px)").matches) {
-//
-//     } else if (window.matchMedia("(min-width: 768px)").matches) {
-//
-//     }
-// });
+$(window).on('load resize', function() {
+    'use strict';
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+        skrollr.init().destroy(); // skrollr.init() returns the singleton created above
 
+    } else if (window.matchMedia("(min-width: 1024px)").matches) {
+        skrollr.init({});
+    }
+});
+
+
+// var s = skrollr.init({});
 

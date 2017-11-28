@@ -1,0 +1,97 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Главная страница
+
+block content
+
+    header.header-about
+        .container
+            .row.justify-content-center
+                .col-md-10
+                    .jumbotron
+                        h2  Ми — команда мрійників і реалістів. Віримо, що нема потреби витрачати все життя на пошуки себе, якщо можна присвятити цей час творенню себе.
+        .header-planes(data-0="top:55%; left:0%" data-600-end="top:-200%; left:200%")
+            img(src='img/illus/plane1.png').header-planes--big
+            img(src='img/illus/plane22.png').header-planes--small
+
+    section
+        .container
+            .row.justify-content-center
+                .col-md-10
+                    h2 Наш колектив
+            .row
+                .col-md-6.col-lg-4
+                    a(href='' title='' alt='').team-container
+                        .team-container--image
+                            img(src='img/illus/slider/face1.png' title='' alt='')
+                        .team-container--description
+                            h3 Інна Хлистік
+                            p Керівник та ідейний натхненник студії Tutoria. Викладач української мови та літератури
+                            p
+                                b Освіта:
+                                |  Волинський національний університет ім. Лесі Українки
+                .col-md-6.col-lg-4
+                    a(href='' title='' alt='').team-container
+                        .team-container--image
+                            img(src='img/illus/slider/face1.png' title='' alt='')
+                        .team-container--description
+                            h3 Діна Мущенко
+                            p Викладач української мови та літератури
+                            p
+                                b Освіта:
+                                |  Національний педагогічний університет ім. М.П. Драгоманова
+
+                            p
+                                i Переможець Всеукраїнського конкурсу-захисту науково-дослідницьких робіт учнів-членів Малої академії наук України (секція “Фольклористика”)
+                .col-md-6.col-lg-4
+                    a(href='' title='' alt='').team-container
+                        .team-container--image
+                            img(src='img/illus/slider/face1.png' title='' alt='')
+                        .team-container--description
+                            h3 Тетяна Синьоок
+                            p Викладач української мови та літератури
+                            p
+                                b Освіта:
+                                |  Київський національний університет ім. Тараса Шевченка, Кандидат філологічних наук.
+
+                            p
+                                i Переможець Всеукраїнських учнівських і студентських олімпіад з української мови та літератури (2006, 2007, 2012).
+
+                            p Бал ЗНО з української мови та літератури:
+                                b
+                                    |  195.5
+                .col-md-6.col-lg-4
+                    a(href='' title='' alt='').team-container
+                        .team-container--image
+                            img(src='img/illus/slider/face1.png' title='' alt='')
+                        .team-container--description
+                            h3 Людмила Дідух
+                            p Викладач історії України
+                            p
+                                b Освіта:
+                                |  Національний університет «Києво-могилянська Академія»
+
+                            p
+                                i Кандидат історичних наук
+                .col-md-6.col-lg-4
+                    a(href='' title='' alt='').team-container
+                        .team-container--image
+                            img(src='img/illus/slider/face1.png' title='' alt='')
+                        .team-container--description
+                            h3 Ірина Бабічук
+                            p Викладач хімії
+                            p
+                                b Освіта:
+                                |  Волинський національний університет ім. Лесі Українки
+
+                            p
+                                i Аспірантура інституту загальної та неорганічної хімії НАН України
+                .col-md-6.col-lg-4
+                    a(href='' title='' alt='').team-container
+                        .team-container--image
+                            img(src='img/illus/icons/plus.svg' title='' alt='').plus
+                        .team-container--description
+                            h3 Приєднуйся до команди
+                            p Ми в постійному пошуку талановитих викладачів. Надсилай своє резюме, якщо хочеш стати частиною Тutoria

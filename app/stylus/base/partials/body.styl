@@ -3,13 +3,17 @@
 
 html
   overflow-x hidden
-  touch-action: auto;
+  touch-action: none;
 
 body
   overflow-x hidden
   font(1rem, $black, 400, normal)
   background $white
-  height auto !important
-  touch-action: auto;
+  //height auto !important
+
   +mobile()
     padding-top 56px !important
+
+    //height 100% !important
+    touch-action: none;
+

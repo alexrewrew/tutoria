@@ -22,3 +22,35 @@ header
   +mobile()
     padding-top 0
     height 520px
+
+.header-about
+  background url('../img/illus/screen2.png') no-repeat center center
+  background-size cover
+  height 1011px
+  padding 5.313rem 0
+  position relative
+  overflow hidden
+  +mobile()
+    padding-top 0
+    height 520px
+
+.header-planes
+  position absolute
+  left 0
+  max-width 844px
+  +mobile()
+    bottom 115px
+    right 15px
+  &--big
+    +mobile()
+      display none
+  &--small
+    position relative
+    top 800px
+    left -500px
+    +mobile()
+      top 0
+      right 0
+      left: auto
+      position absolute
+      max-width 80px
