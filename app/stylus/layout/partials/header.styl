@@ -34,6 +34,25 @@ header
     padding-top 0
     height 520px
 
+.header-projects
+  background url('../img/illus/screen3.jpg') no-repeat center center
+  background-size cover
+  height 900px
+  padding 5.313rem 0
+  position relative
+  overflow hidden
+  margin-bottom: 5rem;
+  &:before
+    pseudo(block, absolute)
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background-color: rgba(98, 63, 152, 0.5);
+  +mobile()
+    padding-top 0
+    height 520px
+
 .header-planes
   position absolute
   left 0
@@ -54,3 +73,9 @@ header
       left: auto
       position absolute
       max-width 80px
+
+
+.header-contacts
+  margin-top 120px
+  +mobile()
+    margin-top 0

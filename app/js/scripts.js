@@ -88,7 +88,7 @@ $(document).ready(function () {
     // ----- MODAL -----
 
     // MODAAL PLUGIN
-    // $(".inline").modaal();
+    $(".inline").modaal();
 
     // ----- ANIMATION -----
 

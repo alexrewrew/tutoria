@@ -1,0 +1,42 @@
+//- layouts/layout.pug
+extend layouts/_layout-contacts.pug
+
+block title
+    | Главная страница
+
+block content
+
+    header.header-contacts
+        iframe(src='https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2539.8719869654274!2d30.476981901221908!3d50.46210844430525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x40d4ce7976bee27b%3A0x1d3e315c9ebba01c!2z0JvRg9C6J9GP0L3RltCy0YHRjNC60LAsINCa0LjRl9CyLCAwMjAwMA!3m2!1d50.462420699999996!2d30.481786699999997!4m5!1s0x40d4ce78b9da38b5%3A0x6a089eba03dbfe92!2z0LLRg9C70LjRhtGPINCU0LXQs9GC0Y_RgNGW0LLRgdGM0LrQsCwgONCQLCDQmtC40ZfQsg!3m2!1d50.462199!2d30.475969!5e0!3m2!1suk!2sua!4v1512070058523' frameborder='0', style='border:0', allowfullscreen='' id='map')
+
+    section
+        .container
+            .row.justify-content-center
+                .col-md-8
+                    p.no-margin Адреса
+                    h2 М. Київ, вул Дегтярівська 8а, 3 поверх
+
+                    p.no-margin Адреса
+                    h2
+                        a(href='mailto:studiatutoria@gmail.com' title='') studiatutoria@gmail.com
+
+                    p.no-margin Телефон
+                    h2
+                        a(href='tel:+380671137650' title='') +380 67 113 76 50
+
+    section.back-gray
+        .container
+            .row.justify-content-center
+                .col-md-10
+                    h3 Напишіть нам
+                    form
+                        input(type='text' placeholder="Ім'я")
+                        .input-two
+                            input(type='text' placeholder="E-mail")
+                            input(type='text' placeholder="Номер телефону")
+                        textarea(placeholder='Повідомлення')
+                        button(type='submit').button Надіслати
+
+
+
+

@@ -43,6 +43,7 @@ nav.nav-scroll
     li
       a
         border 2px solid $yellow
+        background $yellow
 
 
 .nav-panel
@@ -62,6 +63,9 @@ nav.nav-scroll
     align-items flex-start
     width 100%
     height auto
+    padding-top: 20%;
+  +landscape()
+    padding-top 0
   +portrait()
     flex-wrap wrap
   li
@@ -107,10 +111,16 @@ nav.nav-scroll
     .button
       margin-bottom 0
       border 2px solid $white
+      background $trans
+      &:hover
+        background $trans
+        color $yellow
+        border-color $yellow
       +mobile()
         font-size 1.5rem
         border-color $yellow
         width 290px
+        background $yellow
 
 .nav-mobile
   display none

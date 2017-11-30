@@ -1,15 +1,50 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
-.fancybox-slide > div
-  width 100%
-  max-width 1170px
-  padding 2rem 0
-  +tablet()
-    max-width 960px
-  +portrait()
-    max-width 720px
-  +fablet()
-    max-width 540px
+.modaal-container
+  max-width 920px
+  position relative
+
+.modaal-content-container
+  padding 0 15px
+
+.modaal-close
+  position: absolute;
+  top: 0;
+  left: 0;
+  &:before, &:after
+    background $red
+    height: 28px;
+    border-radius 0
+
+
+.team-member--image
+  width 201px
+  height 201px
+  border-radius 50%
+  overflow hidden
+  display flex
+  align-items center
+  justify-content center
+  margin 20px 0
+
+.team-member--blue
+  background $blue
+  padding-top 35px
+  padding-bottom 44px
+
+.team-member--white
+  background $white
+  padding-top 34px
+  padding-bottom 36px
+  h3
+    font-size 1.688em
+    margin-bottom 0
+
+.team-member--description
+  columns 2
   +mobile()
-    max-width calc(100% - 30px)
+    columns 1
+  p
+    color $white
+
