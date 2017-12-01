@@ -2,6 +2,7 @@
   padding: 23px 7px 6px;
   margin 0 0 20px
   min-height 214px
+  transitions()
   &--note
     display flex
     align-items  flex-end
@@ -30,15 +31,23 @@
   .button
     max-width: 324px;
     width 100%
+    &:hover
+      color $yellow
 
 .course--back-green
   background $green
+  &:hover
+    background $green-full
 
 .course--back-purple
   background $purple2
+  &:hover
+    background $purple2-full
 
 .course--back-crimson
   background $crimson
+  &:hover
+    background $crimson-full
 
 .course-big
   margin-bottom 3.75rem
