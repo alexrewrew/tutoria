@@ -1,0 +1,41 @@
+.blog-container
+  display block
+  margin-bottom 88px
+  &--image
+    width 100%
+    height 200px
+    display flex
+    justify-content center
+    align-items center
+    overflow hidden
+    margin-bottom 1.75rem
+    position relative
+    img
+      width 100%
+    &:after
+      pseudo(block,absolute)
+      top 0
+      left 0
+      right 0
+      bottom 0
+      background rgba(251, 174, 23, .7)
+      transitions()
+      z-index 1
+      opacity 0
+      +mobile()
+        opacity 1
+  &--description
+    &-date
+      margin-bottom 0
+      font-size 1.125em
+      transitions()
+    h3
+      font-size 1.688em
+      transitions()
+  &:hover
+    .blog-container--description
+      &-date, h3
+        color $yellow
+    .blog-container--image
+      &:after
+        opacity 1

@@ -138,6 +138,18 @@ $(window).on('load resize', function() {
     } else if (window.matchMedia("(min-width: 1024px)").matches) {
         skrollr.init({});
     }
+
+    var scroll = $(window).scrollTop();
+
+
+    if (scroll > 0) {
+        $("nav").addClass("nav-scroll");
+    } else {
+        $("nav").removeClass("nav-scroll");
+    }
+
+
+
 });
 
 

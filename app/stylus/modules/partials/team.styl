@@ -1,6 +1,11 @@
+.section-team
+  padding-top 30px
+  margin-bottom: 6.25rem;
+
 .team-container
   display block
   margin-bottom 4rem
+  margin-top 2rem
   &--image
     width: 255px;
     height: 255px;
@@ -10,6 +15,8 @@
     align-items center
     justify-content center
     margin-bottom 1rem
+    img
+      width 100%
     +mobile()
       width 209px
       height 209px
@@ -18,4 +25,7 @@
   &--description
     h3
       font-size $s27
-      margin-bottom 1rem
+      margin-bottom 0
+    p
+      font-size 1.125rem
+      margin-bottom: 1.125rem;

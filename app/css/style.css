@@ -176,9 +176,15 @@ body {
 .contacts .menu li .active {
 	color: #fbae17;
 }
+.contacts .menu li a:hover {
+	color: #fbae17;
+}
 .contacts .menu-button li .button {
 	background: #fbae17;
 	border-color: #fbae17;
+}
+.contacts .menu-button li .button:hover {
+	color: #fbae17;
 }
 .contacts h2 {
 	font-size: 2.25rem;
@@ -398,6 +404,9 @@ a:focus {
 .link-logo img {
 	width: 100%;
 }
+.link-birds {
+	display: block;
+}
 .link-up {
 	position: fixed;
 	right: 15px;
@@ -456,6 +465,9 @@ button:focus {
 }
 .button-white:hover {
 	background: #fbae17;
+}
+.button-big {
+	width: 100%;
 }
 table, tr, th, td {
 	border: 1px solid #000;
@@ -905,6 +917,57 @@ section {
 		margin-bottom: 3rem;
 	}
 }
+article {
+	margin-bottom: 2.5rem;
+}
+article img {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+article p {
+	font-size: 1.125em;
+	line-height: 1.44;
+	margin-bottom: 1.75rem;
+}
+article ul, article ol {
+	margin-bottom: 1.638rem;
+}
+article ul li, article ol li {
+	line-height: 1.44;
+	font-size: 1.125em;
+	margin-bottom: .125rem;
+}
+@media (max-width: 767px) {
+	article ul li, article ol li {
+		font-size: .875rem;
+	}
+}
+article ol {
+	margin-left: 1.25rem;
+}
+article ul li {
+	position: relative;
+	padding-left: 10px;
+}
+article ul li:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 0;
+	width: 5px;
+	height: 1px;
+	background: #000;
+}
+article h4 {
+	letter-spacing: normal;
+	margin-bottom: .25rem;
+	text-transform: none;
+}
+article iframe {
+	width: 100%;
+	height: 250px;
+}
 main {
 	background: #fff;
 	-webkit-transition: all .4s ease;
@@ -994,6 +1057,9 @@ nav.nav-scroll .menu li .active {
 nav.nav-scroll .menu-button li a {
 	border: 2px solid #fbae17;
 	background: #fbae17;
+}
+nav.nav-scroll .menu-button li a:hover {
+	color: #fbae17;
 }
 .nav-panel {
 	display: -webkit-box;
@@ -1145,7 +1211,7 @@ nav.nav-scroll .menu-button li a {
 }
 .menu-button li .button:hover {
 	background: transparent;
-	color: #fbae17;
+	color: #fff;
 	border-color: #fbae17;
 }
 @media (max-width: 767px) {
@@ -1243,7 +1309,7 @@ header {
 	}
 }
 .jumbotron {
-	padding: 5rem 0;
+	padding: 5.875rem 0;
 }
 @media (max-width: 767px) {
 	.jumbotron {
@@ -1257,7 +1323,7 @@ header {
 .header-index {
 	background: url('../img/illus/screen1.png') no-repeat center center;
 	background-size: cover;
-	height: 920px;
+	height: 946px;
 	padding: 5.313rem 0;
 }
 @media (max-width: 767px) {
@@ -1283,11 +1349,11 @@ header {
 .header-projects {
 	background: url('../img/illus/screen3.jpg') no-repeat center center;
 	background-size: cover;
-	height: 900px;
+	height: 926px;
 	padding: 5.313rem 0;
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 5rem;
+	margin-bottom: 0;
 }
 .header-projects:before {
 	content: '';
@@ -1342,6 +1408,45 @@ header {
 	.header-contacts {
 		margin-top: 0;
 	}
+}
+.header-blog {
+	margin-top: 120px;
+	padding: 3.6rem 0 0;
+	margin-bottom: 3rem;
+}
+@media (max-width: 767px) {
+	.header-blog {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+.header-blogin {
+	margin-top: 120px;
+	padding: 1.95rem 0 0;
+	margin-bottom: 3rem;
+}
+.header-blogin h2 {
+	font-size: 1.688em;
+	line-height: 1;
+	margin-bottom: .35rem;
+}
+.header-blogin h1 {
+	line-height: 1;
+	margin-bottom: .75rem;
+}
+.header-blogin h3 {
+	font-size: 1.688em;
+	line-height: 1.48;
+	font-weight: 400;
+}
+@media (max-width: 767px) {
+	.header-blogin {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+footer {
+	padding-bottom: 4.7rem;
 }
 @media (max-width: 767px) {
 	footer .link-logo {
@@ -1779,7 +1884,7 @@ header {
 .section-numbers {
 	background: url('../img/illus/numbers/numbers-back.png') no-repeat center center;
 	background-size: cover;
-	padding: 4.125rem 0 4.25rem;
+	padding: 4.125rem 0 5.3rem;
 	margin-bottom: 4.3rem;
 }
 .section-numbers h2 {
@@ -1858,7 +1963,7 @@ header {
 .section-loved {
 	position: relative;
 	overflow: hidden;
-	background: rgba(98,63,152,.1);
+	background: #623f98;
 	margin-bottom: 4.5rem;
 }
 .section-loved--block {
@@ -1944,9 +2049,14 @@ header {
 		margin-bottom: 1.5rem;
 	}
 }
+.section-team {
+	padding-top: 30px;
+	margin-bottom: 6.25rem;
+}
 .team-container {
 	display: block;
 	margin-bottom: 4rem;
+	margin-top: 2rem;
 }
 .team-container--image {
 	width: 255px;
@@ -1967,6 +2077,9 @@ header {
 	        justify-content: center;
 	margin-bottom: 1rem;
 }
+.team-container--image img {
+	width: 100%;
+}
 @media (max-width: 767px) {
 	.team-container--image {
 		width: 209px;
@@ -1978,7 +2091,11 @@ header {
 }
 .team-container--description h3 {
 	font-size: 1.688rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0;
+}
+.team-container--description p {
+	font-size: 1.125rem;
+	margin-bottom: 1.125rem;
 }
 .course-container {
 	padding: 23px 7px 6px;
@@ -2060,4 +2177,76 @@ header {
 .course-middle {
 	min-height: 244px;
 	margin-bottom: 3.75rem;
+}
+#first, #second, #third {
+	padding-top: 80px;
+	margin-bottom: 0;
+}
+#third {
+	margin-bottom: 3rem;
+}
+.blog-container {
+	display: block;
+	margin-bottom: 88px;
+}
+.blog-container--image {
+	width: 100%;
+	height: 200px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	        align-items: center;
+	overflow: hidden;
+	margin-bottom: 1.75rem;
+	position: relative;
+}
+.blog-container--image img {
+	width: 100%;
+}
+.blog-container--image:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(251,174,23,.7);
+	-webkit-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	        transition: all .4s ease;
+	z-index: 1;
+	opacity: 0;
+}
+@media (max-width: 767px) {
+	.blog-container--image:after {
+		opacity: 1;
+	}
+}
+.blog-container--description-date {
+	margin-bottom: 0;
+	font-size: 1.125em;
+	-webkit-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+.blog-container--description h3 {
+	font-size: 1.688em;
+	-webkit-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+.blog-container:hover .blog-container--description-date, .blog-container:hover .blog-container--description h3 {
+	color: #fbae17;
+}
+.blog-container:hover .blog-container--image:after {
+	opacity: 1;
 }
