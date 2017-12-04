@@ -1724,7 +1724,7 @@ footer {
 	margin-bottom: 1rem;
 }
 .team-container--image img {
-	width: 100%;
+	height: 100%;
 }
 @media (max-width: 767px) {
 	.team-container--image {
