@@ -4,15 +4,32 @@
 input[type='text'].error,
 input[type='password'].error,
 input[type='email'].error
-  border-color red
-  color red
+  color $red
   +placeholder()
-    color red
+    color $red
   &:focus
     color inherit
 
 input[type='checkbox'].error + label
-  color red
+  color $red
 
 input[type='radio'].error + label
-  color red
+  color $red
+
+textarea.error
+  color $red
+  +placeholder()
+    color $red
+
+
+input.error + label, textarea.error + label
+  display block
+
+
+.back-gray
+  label
+    bottom -22px
+    +mobile()
+      bottom -5px
+  textarea + label
+    bottom 0

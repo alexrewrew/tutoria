@@ -78,7 +78,7 @@ gulp.task("scripts2", function () {
         // "app/libs/jquery-scrollspy/jquery-scrollspy.js",
         // "app/libs/ddscrollspy/ddscrollspy.js",
         // "app/libs/jquery.maskedinput/dist/jquery.maskedinput.js",
-        "app/libs/jquery-validation/dist/jquery.validate.js",
+        // "app/libs/jquery-validation/dist/jquery.validate.js",
         // 'app/libs/fullpage.js/vendors/jquery.easings.min.js',
         // 'app/libs/fullpage.js/vendors/scrolloverflow.js',
         // 'app/libs/fullpage.js/dist/jquery.fullpage.js'

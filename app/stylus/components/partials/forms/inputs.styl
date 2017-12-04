@@ -15,9 +15,12 @@ input
   color $white
   &:focus
     outline none
+    +placeholder()
+      opacity 1
   +placeholder()
     color $white
     opacity .5
+    transitions()
   +mobile()
     margin-top 0
     margin-bottom 1.5rem
@@ -40,7 +43,7 @@ textarea
   &:focus
     outline none
 
-label {}
+
 
 .input-two
   display flex
@@ -48,7 +51,7 @@ label {}
   margin-bottom .875rem
   +mobile()
     flex-wrap wrap
-  input
+  .form-group
     flex 1 1 47%
     max-width 47%
     +mobile()

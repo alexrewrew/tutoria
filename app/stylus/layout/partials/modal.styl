@@ -27,6 +27,21 @@
   align-items center
   justify-content center
   margin 20px 0
+  position relative
+  img
+    height 100%
+  .team-gif
+    position relative
+    z-index 10
+  .team-img
+    position absolute
+    z-index 20
+    transitions()
+    +mobile()
+      display none
+  &:hover
+    .team-img
+      opacity 0
 
 .team-member--blue
   background $blue

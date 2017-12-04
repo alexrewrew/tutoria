@@ -133,9 +133,16 @@ block content
                 .col-md-10
                     h3 Підпишись на розсилку Tutoria
                     form.form-half-input#form-tutoria1
-                        input(type='text' placeholder='Ім’я').error
-                        input(type='email' placeholder='E-mail')
-                        button.button.button-white Надіслати
+                        .form-group
+                            input(type='text' placeholder='Ім’я' name='name' id='name')
+                            label(for='name') Необхідно заповнити це поле
+                        .form-group
+                            input(type='email' placeholder='E-mail' name='email' id='email').error
+                            label(for='email') E-mail в форматі example@mail.com
+                        button.button.button-white.send Надіслати
+                        button.button.button-white.success
+                            img(src='img/illus/icons/check.png')
+                            span Готово!
 
 
 

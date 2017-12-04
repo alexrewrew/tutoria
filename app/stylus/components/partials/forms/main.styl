@@ -5,9 +5,33 @@ form {}
   flex-wrap wrap
   flex-direction row
   justify-content space-between
-  input
+  .form-group
     flex 1 1 calc(50% - 1rem)
     max-width calc(50% - 1rem)
     +mobile()
       flex 1 1 100%
       max-width 100%
+
+.form-group
+  position relative
+  label
+    position absolute
+    left 0
+    bottom 0
+    font-size .875em
+    color $red
+    display none
+    +mobile()
+      bottom -4px
+
+.button.send
+  display block
+
+.button.success
+  display none
+  position relative
+  span
+    position absolute
+    right -100px
+    top 10px
+    color $white

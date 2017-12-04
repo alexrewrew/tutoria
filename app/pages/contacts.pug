@@ -30,11 +30,19 @@ block content
                 .col-md-10
                     h3 Напишіть нам
                     form#form-tutoria2
-                        input(type='text' placeholder="Ім'я")
+                        .form-group
+                            input(type='text' placeholder="Ім'я" id='name')
+                            label(for='name') Необхідно заповнити це поле
                         .input-two
-                            input(type='text' placeholder="E-mail")
-                            input(type='text' placeholder="Номер телефону")
-                        textarea(placeholder='Повідомлення')
+                            .form-group
+                                input(type='text' placeholder="E-mail" id='email')
+                                label(for='email') E-mail в форматі example@mail.com
+                            .form-group
+                                input(type='text' placeholder="Номер телефону" id='phone')
+                                label(for='phone') Необхідно заповнити це поле
+                        .form-group
+                            textarea(placeholder='Повідомлення' id='text')
+                            label(for='text') Необхідно заповнити це поле
                         button(type='submit').button Надіслати
 
 
