@@ -67,11 +67,12 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     "use strict";
+
+    // var s = skrollr.init({});
     //  ----- SLIDER -----
 
     // SLICK SLIDER
     $(".slider-full").slick({
-        // slide: ".slide",
         prevArrow: "<div class='arrow left'><img src='img/illus/icons/arrow-left.svg'></div>",
         nextArrow: "<div class='arrow right'><img src='img/illus/icons/arrow-right.svg'></div>",
         dots: false
@@ -85,18 +86,11 @@ $(document).ready(function () {
         disable_search_threshold: 10,
         no_results_text: "Нічого не знайдено"
     });
-    // $(".chosen-image").chosenImage({disable_search_threshold: 10});
 
     // ----- MODAL -----
 
     // MODAAL PLUGIN
     $(".inline").modaal();
-
-    // ----- ANIMATION -----
-
-    // WOW JS
-    // new WOW().init();
-
 
     // ----- ACCORDION -----
     $(function () {
@@ -110,14 +104,6 @@ $(document).ready(function () {
     $(function () {
         $("#tabs").tabs();
     });
-
-    // ----- SCROLLSPY -----
-
-    // $(function(){ // on document load
-    //     $('.menu').ddscrollSpy({ // initialize first demo
-    //         scrolltopoffset: -50
-    //     });
-    // });
 
     // SCROLLING CLASS CHANGE
     $(window).scroll(function () {
@@ -135,14 +121,13 @@ $(document).ready(function () {
 $(window).on('load resize', function() {
     'use strict';
     if (window.matchMedia("(max-width: 1024px)").matches) {
-        skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+        skrollr.destroy(); // skrollr.init() returns the singleton created above
 
     } else if (window.matchMedia("(min-width: 1024px)").matches) {
-        skrollr.init({});
+        skrollr.init();
     }
 
     var scroll = $(window).scrollTop();
-
 
     if (scroll > 0) {
         $("nav").addClass("nav-scroll");
@@ -155,5 +140,5 @@ $(window).on('load resize', function() {
 });
 
 
-// var s = skrollr.init({});
+
 

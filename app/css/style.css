@@ -1242,7 +1242,7 @@ header {
 .header-planes--small {
 	position: relative;
 	top: 800px;
-	left: -500px;
+	left: -800px;
 }
 @media (max-width: 767px) {
 	.header-planes--small {
