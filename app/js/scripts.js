@@ -114,11 +114,24 @@ $(document).ready(function () {
             $("nav").removeClass("nav-scroll");
         }
     });
+
+    // DROPDOWN LINK
+    // $('.dropdown-link').mouseover(function () {
+    //     $('.dropdown-panel').addClass('visible');
+    // });
+
+    $('.menu li a').mouseover(function () {
+        if ($(this).hasClass('dropdown-link')) {
+            $('.dropdown-panel').addClass('visible');
+        } else {
+            $('.dropdown-panel').removeClass('visible');
+        }
+    });
 });
 
 // !!! RESPONSIVE SCRIPTS !!!
 
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
     'use strict';
     if (window.matchMedia("(max-width: 1024px)").matches) {
         skrollr.destroy(); // skrollr.init() returns the singleton created above
@@ -134,7 +147,6 @@ $(window).on('load resize', function() {
     } else {
         $("nav").removeClass("nav-scroll");
     }
-
 
 
 });
