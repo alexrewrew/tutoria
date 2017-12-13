@@ -1733,12 +1733,20 @@ footer {
 .section-loved .loved-back {
 	position: absolute;
 	top: 0;
-	right: 15px;
+	right: -135px;
+}
+@media (min-width: 1600px) {
+	.section-loved .loved-back {
+		right: 0;
+	}
 }
 @media (max-width: 767px) {
 	.section-loved .loved-back {
 		display: none;
 	}
+}
+.purple-black {
+	background: #623f98;
 }
 .section-send {
 	background: #fbae17;
@@ -1808,6 +1816,47 @@ footer {
 	display: block;
 	margin-bottom: 4rem;
 	margin-top: 2rem;
+	position: relative;
+}
+.team-container .team-bird {
+	position: absolute;
+	height: auto;
+	z-index: 30;
+}
+.team-container .team-bird1 {
+	top: 210px;
+	right: 96px;
+	-webkit-transform: rotate(-6.09deg);
+	    -ms-transform: rotate(-6.09deg);
+	        transform: rotate(-6.09deg);
+}
+.team-container .team-bird2 {
+	top: 42px;
+	-webkit-transform: rotate(15.45deg);
+	    -ms-transform: rotate(15.45deg);
+	        transform: rotate(15.45deg);
+	right: 0;
+}
+.team-container .team-bird3 {
+	-webkit-transform: rotate(-31.46deg);
+	    -ms-transform: rotate(-31.46deg);
+	        transform: rotate(-31.46deg);
+	top: 175px;
+	right: 13px;
+}
+.team-container .team-bird4 {
+	-webkit-transform: rotate(-15.82deg);
+	    -ms-transform: rotate(-15.82deg);
+	        transform: rotate(-15.82deg);
+	top: 27px;
+	right: 94px;
+}
+.team-container .team-bird5 {
+	-webkit-transform: rotate(5.45deg);
+	    -ms-transform: rotate(5.45deg);
+	        transform: rotate(5.45deg);
+	bottom: 224px;
+	left: -66px;
 }
 .team-container--image {
 	width: 255px;

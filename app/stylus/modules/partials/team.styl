@@ -2,10 +2,41 @@
   padding-top 30px
   margin-bottom: 6.25rem;
 
+
 .team-container
   display block
   margin-bottom 4rem
   margin-top 2rem
+  position relative
+
+  .team-bird
+    position absolute
+    height auto
+    z-index 30
+  .team-bird1
+    top: 210px;
+    right: 96px;
+    transform: rotate(-6.09deg);
+
+  .team-bird2
+    top 42px
+    transform: rotate(15.45deg);
+    right: 0;
+  .team-bird3
+    transform: rotate(-31.46deg);
+    top: 175px;
+    right: 13px;
+  .team-bird4
+    transform: rotate(-15.82deg);
+    top: 27px;
+    right: 94px;
+  .team-bird5
+    transform: rotate(5.45deg);
+    bottom: 224px;
+    left: -66px;
+
+
+
   &--image
     width: 255px;
     height: 255px;
@@ -27,6 +58,8 @@
       transitions()
       +mobile()
         display none
+
+
     +mobile()
       width 209px
       height 209px

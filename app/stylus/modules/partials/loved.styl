@@ -2,7 +2,7 @@
   position relative
   overflow hidden
   background $purple
-  margin-bottom: 4.5rem;
+  margin-bottom: 4.5rem
   &--block
     padding-top 3.875rem
     padding-bottom 5.6rem
@@ -16,6 +16,11 @@
   .loved-back
     position absolute
     top 0
-    right 15px
+    right: -135px;
+    +custom-min(1600px)
+      right 0
     +mobile()
       display none
+
+.purple-black
+  background $purple
