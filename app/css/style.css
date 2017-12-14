@@ -1578,7 +1578,10 @@ footer {
 }
 .study-container h3 {
 	z-index: 3;
-	position: relative;
+	position: absolute;
+	margin-bottom: 0;
+	left: 15px;
+	bottom: 15px;
 }
 .study-container:after {
 	content: '';
@@ -1720,6 +1723,12 @@ footer {
 .section-loved--block {
 	padding-top: 3.875rem;
 	padding-bottom: 5.6rem;
+	padding-left: 36px;
+}
+@media (max-width: 767px) {
+	.section-loved--block {
+		padding-left: 0;
+	}
 }
 .section-loved--block h2 {
 	color: #fff;
@@ -1845,11 +1854,11 @@ footer {
 	right: 13px;
 }
 .team-container .team-bird4 {
-	-webkit-transform: rotate(-15.82deg);
-	    -ms-transform: rotate(-15.82deg);
-	        transform: rotate(-15.82deg);
-	top: 27px;
-	right: 94px;
+	-webkit-transform: rotate(-31.82deg);
+	    -ms-transform: rotate(-31.82deg);
+	        transform: rotate(-31.82deg);
+	top: 100px;
+	left: -74px;
 }
 .team-container .team-bird5 {
 	-webkit-transform: rotate(5.45deg);
@@ -2096,9 +2105,9 @@ footer {
 	top: 100%;
 	width: 720px;
 	padding: 15px;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: .6s all ease;
+	     -o-transition: .6s all ease;
+	        transition: .6s all ease;
 	-webkit-transform: translateY(-200vh);
 	    -ms-transform: translateY(-200vh);
 	        transform: translateY(-200vh);

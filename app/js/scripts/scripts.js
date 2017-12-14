@@ -60,6 +60,9 @@ $(document).ready(function () {
             $('.dropdown-panel').removeClass('visible');
         }
     });
+    $('.dropdown-panel').mouseleave(function () {
+        $(this).removeClass('visible');
+    })
 });
 
 // !!! RESPONSIVE SCRIPTS !!!
