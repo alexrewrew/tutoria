@@ -2105,9 +2105,9 @@ footer {
 	top: 100%;
 	width: 720px;
 	padding: 15px;
-	-webkit-transition: .6s all ease;
-	     -o-transition: .6s all ease;
-	        transition: .6s all ease;
+	-webkit-transition: .8s all ease;
+	     -o-transition: .8s all ease;
+	        transition: .8s all ease;
 	-webkit-transform: translateY(-200vh);
 	    -ms-transform: translateY(-200vh);
 	        transform: translateY(-200vh);
