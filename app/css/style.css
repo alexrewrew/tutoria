@@ -1426,10 +1426,12 @@ footer {
 .team-member--image .team-gif {
 	position: relative;
 	z-index: 10;
+	border-radius: 50%;
 }
 .team-member--image .team-img {
 	position: absolute;
 	z-index: 20;
+	border-radius: 50%;
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
 	        transition: all .4s ease;
@@ -1837,10 +1839,12 @@ footer {
 .team-container--image .team-gif {
 	position: relative;
 	z-index: 10;
+	border-radius: 50%;
 }
 .team-container--image .team-img {
 	position: absolute;
 	z-index: 20;
+	border-radius: 50%;
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
 	        transition: all .4s ease;
@@ -2038,9 +2042,40 @@ footer {
 .blog-container:hover .blog-container--image:after {
 	opacity: 1;
 }
+.menu li a {
+	padding: 22px 0;
+}
 .menu .dropdown-link {
 	position: relative;
 	z-index: 20;
+	padding-top: 0;
+	padding-bottom: 22px;
+	margin-top: 22px;
+}
+.menu .dropdown-link:after, .menu .dropdown-link:before {
+	content: '';
+	display: block;
+	position: absolute;
+	right: -16px;
+	top: 10px;
+	width: 9px;
+	height: 2px;
+	background: #000;
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	-webkit-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+.menu .dropdown-link:after {
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+	right: -21px;
+}
+.menu .dropdown-link:hover:before, .menu .dropdown-link:hover:after {
+	background: #fff;
 }
 .dropdown-panel {
 	position: absolute;
@@ -2049,12 +2084,12 @@ footer {
 	top: 100%;
 	width: 720px;
 	padding: 15px;
-	-webkit-transition: .8s all ease;
-	     -o-transition: .8s all ease;
-	        transition: .8s all ease;
-	-webkit-transform: translateY(-200vh);
-	    -ms-transform: translateY(-200vh);
-	        transform: translateY(-200vh);
+	-webkit-transition: .6s all ease;
+	     -o-transition: .6s all ease;
+	        transition: .6s all ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
 }
 @media (max-width: 767px) {
 	.dropdown-panel {
@@ -2101,7 +2136,7 @@ footer {
 	margin-bottom: 3px;
 }
 .dropdown-panel.visible {
-	-webkit-transform: none;
-	    -ms-transform: none;
-	        transform: none;
+	opacity: 1;
+	visibility: visible;
+	z-index: 100;
 }

@@ -1,7 +1,27 @@
 .menu
+  li a
+    padding 22px 0
   .dropdown-link
     position relative
     z-index 20
+    padding-top 0
+    padding-bottom: 22px;
+    margin-top: 22px;
+    &:after, &:before
+      pseudo(block,absolute)
+      right: -16px;
+      top: 10px;
+      width 9px
+      height 2px
+      background $black
+      transform rotate(45deg)
+      transitions()
+    &:after
+        transform rotate(-45deg)
+        right -21px
+    &:hover
+      &:before, &:after
+        background $white
 
 .dropdown-panel
   position absolute
@@ -10,9 +30,13 @@
   top 100%
   width 720px
   padding 15px
-  transition .8s all ease
+  transition .6s all ease
 
-  transform translateY(-200vh)
+  //transform translateY(-200vh)
+
+  opacity 0
+  visibility hidden
+  z-index -1
 
   +mobile()
     display none
@@ -50,4 +74,8 @@
       margin-bottom 3px
 
 .dropdown-panel.visible
-    transform none
+  opacity 1
+  visibility visible
+  z-index 100
+  //transform none
+
