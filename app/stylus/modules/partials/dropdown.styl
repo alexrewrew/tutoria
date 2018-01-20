@@ -5,7 +5,8 @@
     position relative
     z-index 20
     padding-top 0
-    padding-bottom: 22px;
+    padding-bottom 0
+    margin-bottom: 22px;
     margin-top: 22px;
     &:after, &:before
       pseudo(block,absolute)
@@ -22,6 +23,13 @@
     &:hover
       &:before, &:after
         background $white
+  .dropdown-link.active
+    padding-bottom 22px
+    margin-bottom 0
+    color $white
+    &:before, &:after
+      background $white
+
 
 .dropdown-panel
   position absolute
@@ -30,7 +38,7 @@
   top 100%
   width 720px
   padding 15px
-  transition .6s all ease
+  transition .4s all ease
 
   //transform translateY(-200vh)
 

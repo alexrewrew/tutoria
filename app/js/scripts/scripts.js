@@ -55,13 +55,16 @@ $(document).ready(function () {
 
     $('.menu li a').mouseover(function () {
         if ($(this).hasClass('dropdown-link')) {
+            $(this).addClass('active');
             $('.dropdown-panel').addClass('visible');
         } else {
+            $('.dropdown-link').removeClass('active');
             $('.dropdown-panel').removeClass('visible');
         }
     });
     $('.dropdown-panel').mouseleave(function () {
         $(this).removeClass('visible');
+        $('.dropdown-link').removeClass('active');
     })
 });
 

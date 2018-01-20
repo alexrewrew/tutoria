@@ -2049,7 +2049,8 @@ footer {
 	position: relative;
 	z-index: 20;
 	padding-top: 0;
-	padding-bottom: 22px;
+	padding-bottom: 0;
+	margin-bottom: 22px;
 	margin-top: 22px;
 }
 .menu .dropdown-link:after, .menu .dropdown-link:before {
@@ -2077,6 +2078,14 @@ footer {
 .menu .dropdown-link:hover:before, .menu .dropdown-link:hover:after {
 	background: #fff;
 }
+.menu .dropdown-link.active {
+	padding-bottom: 22px;
+	margin-bottom: 0;
+	color: #fff;
+}
+.menu .dropdown-link.active:before, .menu .dropdown-link.active:after {
+	background: #fff;
+}
 .dropdown-panel {
 	position: absolute;
 	background: #fff;
@@ -2084,9 +2093,9 @@ footer {
 	top: 100%;
 	width: 720px;
 	padding: 15px;
-	-webkit-transition: .6s all ease;
-	     -o-transition: .6s all ease;
-	        transition: .6s all ease;
+	-webkit-transition: .4s all ease;
+	     -o-transition: .4s all ease;
+	        transition: .4s all ease;
 	opacity: 0;
 	visibility: hidden;
 	z-index: -1;
