@@ -1,7 +1,6 @@
 $(document).ready(function () {
     "use strict";
 
-    // var s = skrollr.init({});
     //  ----- SLIDER -----
 
     // SLICK SLIDER
@@ -46,12 +45,9 @@ $(document).ready(function () {
         else {
             $("nav").removeClass("nav-scroll");
         }
+        $('.dropdown-link').removeClass('active');
+        $('.dropdown-panel').removeClass('visible');
     });
-
-    // DROPDOWN LINK
-    // $('.dropdown-link').mouseover(function () {
-    //     $('.dropdown-panel').addClass('visible');
-    // });
 
     $('.menu li a').mouseover(function () {
         if ($(this).hasClass('dropdown-link')) {
