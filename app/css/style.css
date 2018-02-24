@@ -824,9 +824,6 @@ nav.nav-scroll {
 		        box-shadow: none;
 	}
 }
-nav.nav-scroll .link-logo {
-	padding: 10px 5px;
-}
 @media (max-width: 767px) {
 	nav.nav-scroll .link-logo {
 		padding: 13px 0;
